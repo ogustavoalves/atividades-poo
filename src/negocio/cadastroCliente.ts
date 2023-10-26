@@ -2,6 +2,7 @@ import Entrada from "../io/entrada"
 import Cliente from "../modelo/cliente"
 import CPF from "../modelo/cpf"
 import Cadastro from "./cadastro"
+import Pet from "../modelo/pet"
 
 export default class CadastroCliente extends Cadastro {
     private clientes: Array<Cliente>
@@ -23,6 +24,29 @@ export default class CadastroCliente extends Cadastro {
         let dia = new Number(partesData[0].valueOf()).valueOf()
         let dataEmissao = new Date(ano, mes, dia)
         let cpf = new CPF(valor, dataEmissao);
+
+
+        let pets: Pet[] = []
+        let inputPet: string | boolean = true;
+        while(inputPet) {
+            
+            let nomePet = this.entrada.receberTexto(`Informe o nome do pet: `);
+            let tipoPet = this.entrada.receberTexto(`Informe o tipo do pet: `);
+            let generoPet = this.entrada.receberTexto(`Informe o gênero do pet (M/F): `);
+            let racaPet = this.entrada.receberTexto(`Informe a raça do pet: `);
+            pets.push(new Pet(nomePet, tipoPet, generoPet, racaPet));
+
+            inputPet = this.entrada.receberTexto(`Cadastrar outro pet? (S/N)`);
+            if (inputPet === "S" || inputPet === "s") {
+                inputPet = true
+            } else if (inputPet === "N" || inputPet === "n") {
+                inputPet = false
+            } else {
+                console.log(`Opção inválida`)
+                inputPet = this.entrada.receberTexto(`Cadastrar outro pet? (S/N)`)
+            }
+        }
+
         let cliente = new Cliente(nome, nomeSocial, cpf);
         this.clientes.push(cliente)
         console.log(`\nCadastro concluído :)\n`);
