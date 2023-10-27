@@ -4,10 +4,12 @@ import Pet from "../modelo/pet";
 
 export default class ListagemClientes extends Listagem {
     private clientes: Array<Cliente>
+
     constructor(clientes: Array<Cliente>) {
         super()
         this.clientes = clientes
     }
+
     public listar(): void {
         console.log(`\nLista de todos os clientes:`);
         this.clientes.forEach(cliente => {
@@ -26,7 +28,7 @@ export default class ListagemClientes extends Listagem {
             console.log(`Pets: `)
             pets.forEach(pet => {
                 if(pet){
-                    console.log(`Nome: ` + pet.getNome + '  Tipo: ' + pet.getTipo + `  Genero: ` + pet.getGenero + '  Raça: ' + pet.getRaca)
+                    console.log(`Nome: ` + pet.getNome + '  Tipo: ' + pet.getTipo + `  Genero: ` + pet.getGenero + '  Raça: ' + pet.getRaca);
                 }
             });
         }
