@@ -28,7 +28,7 @@ export default class ListagemClientes extends Listagem {
             console.log(`Pets: `)
             pets.forEach(pet => {
                 if(pet){
-                    console.log(`Nome: ` + pet.getNome + '  Tipo: ' + pet.getTipo + `  Genero: ` + pet.getGenero + '  Raça: ' + pet.getRaca);
+                    console.log(`Nome: ` + pet.getNome + '  Tipo: ' + pet.getTipo + `  Genero: ` + pet.getGenero + '  Raça: ' + pet.getRaca)
                 }
             });
         }
