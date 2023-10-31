@@ -16,13 +16,13 @@ export default class Cliente {
     private servicosConsumidos: Array<Servico>
     private pets: Array<Pet>
 
-    constructor(nome: string, nomeSocial: string, cpf: CPF, pets: Array<Pet>) {
+    constructor(nome: string, nomeSocial: string, cpf: CPF, pets: Array<Pet>, telefones: Array<Telefone>, dataCadastro: Date, rgs: Array<RG>) {
         this.nome = nome
         this.nomeSocial = nomeSocial
         this.cpf = cpf
-        this.rgs = []
+        this.rgs = rgs
         this.dataCadastro = new Date()
-        this.telefones = []
+        this.telefones = telefones
         this.produtosConsumidos = []
         this.servicosConsumidos = []
         this.pets = pets
@@ -31,21 +31,36 @@ export default class Cliente {
     public get getCpf(): CPF {
         return this.cpf
     }
+
+    public set setCPF (cpf : CPF) {
+        this.cpf = cpf
+    }
+
     public get getRgs(): Array<RG> {
         return this.rgs
     }
+
+    public set setRgs(rg : RG) {
+        this.rgs.push(rg)
+    }
+
     public get getDataCadastro(): Date {
         return this.dataCadastro
     }
+    
+
     public get getTelefones(): Array<Telefone> {
         return this.telefones
     }
+
     public get getProdutosConsumidos(): Array<Produto> {
         return this.produtosConsumidos
     }
+
     public get getServicosConsumidos(): Array<Servico> {
         return this.servicosConsumidos
     }
+
     public get getPets(): Array<Pet>{
         return this.pets
     }
