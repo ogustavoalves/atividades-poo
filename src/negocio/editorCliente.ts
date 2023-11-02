@@ -53,7 +53,7 @@ export default class EditorCliente {
                     let dataEmissaoCPF = this.entrada.receberTexto(`Por favor informe a data de emissão do cpf, no padrão dd/mm/yyyy: `)
                     let partesDataCPF = dataEmissaoCPF.split('/')
                     let anoCPF = new Number(partesDataCPF[2].valueOf()).valueOf()
-                    let mesCPF = new Number(partesDataCPF[1].valueOf()).valueOf()
+                    let mesCPF = new Number(partesDataCPF[1].valueOf()).valueOf() - 1
                     let diaCPF = new Number(partesDataCPF[0].valueOf()).valueOf()
                     let dataCPF = new Date(anoCPF, mesCPF, diaCPF)
                     let cpf = new CPF(valorCPF, dataCPF)

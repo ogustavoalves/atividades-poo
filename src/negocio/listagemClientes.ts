@@ -17,7 +17,7 @@ export default class ListagemClientes extends Listagem {
         this.clientes.forEach(cliente => {
             console.log(`Nome: ` + cliente.nome);
             console.log(`Nome social: ` + cliente.nomeSocial);
-            console.log(`CPF\n` + `Número: ` + cliente.getCpf.getValor + `     Data de emissão: ` + cliente.getCpf.getDataEmissao);
+            console.log(`CPF\n` + `Número: ` + cliente.getCpf.getValor + ` Data de emissão: ` + cliente.getCpf.getDataEmissao);
             this.listarPets(cliente.getPets);
             this.listarTelefones(cliente.getTelefones);
             console.log(`Data de Cadastro: ` + cliente.getDataCadastro);
