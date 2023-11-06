@@ -179,4 +179,8 @@ while (execucao) {
         default:
             console.log(`Operação não entendida :(`)
     }
+
+    
+
+
 }
