@@ -1,6 +1,6 @@
 import { Component } from "react";
 import BarraNavegacao from "./barraNavegacao";
-import ListaCliente from "./listaClientes";
+import ListaCliente from "./pages/listaClientes";
 import FormularioCadastroCliente from "./formularioCadastroCliente";
 
 type state = {
