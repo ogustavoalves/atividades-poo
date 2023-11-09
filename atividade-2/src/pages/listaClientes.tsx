@@ -5,7 +5,7 @@ import { Component } from "react";
 //     tema: string
 // }
 
-export default class ListaCliente extends Component<props>{
+export default class ListaCliente extends Component{
     render() {
         // let tema = this.props.tema
         return (

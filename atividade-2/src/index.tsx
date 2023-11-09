@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-import ListaClientes from './componentes/pages/listaClientes';
-import ListaPets from './componentes/pages/listaPets';
-import ListaProdutos from './componentes/pages/listaProdutos';
+import App from './App';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import ListaClientes from './pages/listaClientes';
+import ListaPets from './pages/listaPets';
+import ListaProdutos from './pages/listaProdutos';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

@@ -23,7 +23,7 @@ export default class ListaPets extends Component{
                             <td>Yorkshire</td>
                             <td>Cachorro</td>
                             <td>Macho</td>
-                            <td>Gugu guloso</td>
+                            <td>O Alves</td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -31,7 +31,7 @@ export default class ListaPets extends Component{
                             <td>Bulldog</td>
                             <td>Cachorro</td>
                             <td>Fêmea</td>
-                            <td>Camila quadrada</td>
+                            <td>Rammon Dino</td>
                         </tr>
                         <tr>
                             <td>3</td>
@@ -39,7 +39,7 @@ export default class ListaPets extends Component{
                             <td>Laranja</td>
                             <td>Gato</td>
                             <td>Macho</td>
-                            <td>Henriken</td>
+                            <td>Gustavo Bateman</td>
                         </tr>
                     </tbody>
                 </table>
