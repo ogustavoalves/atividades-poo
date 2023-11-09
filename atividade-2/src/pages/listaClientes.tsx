@@ -1,13 +1,8 @@
-
 import { Component } from "react";
-
-// type props = {
-//     tema: string
-// }
 
 export default class ListaCliente extends Component{
     render() {
-        // let tema = this.props.tema
+        
         return (
             <div className="container">
                 <h1 className="pb-4">Listagem de Clientes</h1>

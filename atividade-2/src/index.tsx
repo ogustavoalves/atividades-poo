@@ -8,6 +8,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import ListaClientes from './pages/listaClientes';
 import ListaPets from './pages/listaPets';
 import ListaProdutos from './pages/listaProdutos';
+import Formulario from './pages/formularioCadastroCliente';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -20,6 +21,7 @@ root.render(
             <Route index element={ <ListaClientes /> } />
             <Route path='/produtos' element={ <ListaProdutos /> } />
             <Route path='/pets' element={ <ListaPets /> } />
+            <Route path='/cadastro' element={ <Formulario /> } />
         </Route>
       </Routes>
     </BrowserRouter>

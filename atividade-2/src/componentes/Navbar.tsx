@@ -21,6 +21,7 @@ class Navbar extends Component {
                                 <Link to={ '/' } className="list-group-item bg-dark text-white py-1 border-dark"> Clientes </Link>
                                 <Link to={ '/pets' } className="list-group-item bg-dark text-white py-1 border-dark"> Pets </Link>
                                 <Link to={ '/produtos' } className="list-group-item bg-dark text-white py-1 border-dark"> Produtos e Serviços </Link>
+                                <Link to={ '/cadastro' } className="list-group-item bg-dark text-white py-1 border-dark"> Cadastro </Link>
                             </div>
                         </div>
                     </div>
