@@ -18,32 +18,7 @@ export default class ListaPets extends Component<any, ListaPetsState> {
   constructor(props: any) {
     super(props);
     this.state = {
-      pets: [
-        {
-          id: 1,
-          nome: "Jorge Henrique",
-          raca: "Yorkshire",
-          tipo: "Cachorro",
-          genero: "Macho",
-          dono: "O Alves",
-        },
-        {
-          id: 2,
-          nome: "Ollie",
-          raca: "Bulldog",
-          tipo: "Cachorro",
-          genero: "Fêmea",
-          dono: "Rammon Dino",
-        },
-        {
-          id: 3,
-          nome: "Flocky",
-          raca: "Laranja",
-          tipo: "Gato",
-          genero: "Macho",
-          dono: "Gustavo Bateman",
-        },
-      ],
+      pets: [],
     };
   }
 
