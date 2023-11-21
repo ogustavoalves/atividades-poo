@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-interface Cliente {
-  id: number;
-  nome: string;
-  nomeSocial: string;
-  email: string;
-  cpf: string;
-  rg: string;
-  telefone: string;
-}
+
 
 export default function FormularioCadastroCliente({ onSubmit }: any) {
   const [idCounter, setIdCounter] = useState(1);
