@@ -1,0 +1,16 @@
+.custom-toggler {
+    background-color: #000000; /* Substitua pela cor desejada */
+    color: #1c1d1d; /* Substitua pela cor desejada */
+    font-size: 12px; /* Substitua pelo tamanho desejado */
+    padding: 4px 8px; /* Substitua pelo preenchimento desejado */
+}
+
+.custom-toggler-span{
+    color: rgb(255, 12, 12);
+}
+
+.custom-span {
+    color: #45C4B0; /* Substitua pela cor desejada */
+  }
+  
+

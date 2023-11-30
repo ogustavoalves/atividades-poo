@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Cliente from "../models/Cliente";
+import "../style/customBtn.css"
 
 const CadastroClientes: React.FC = () => {
     const initialState: Cliente = {
@@ -61,7 +62,7 @@ const CadastroClientes: React.FC = () => {
     return (
         <form className="container mb-5" onSubmit={ (e) => submitForm(e) }>
             <fieldset>
-                <legend className="mb-3">Informações Gerais</legend>
+                <legend className="mb-3"><h1>Informações gerais</h1></legend>
                 <div className="mb-3">
                     <label htmlFor="nome" className="form-label">Nome</label>
                     <input
@@ -187,7 +188,7 @@ const CadastroClientes: React.FC = () => {
                 </div>
             </fieldset>
             <div className="row justify-content-end">
-                <button type="submit" className="col-md-3 btn btn-success">Salvar alterações</button>
+                <button type="submit" className="col-md-3 btn btn-success custom-btn"> Salvar alterações</button>
             </div>
         </form>
     )

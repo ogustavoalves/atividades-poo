@@ -1,0 +1,10 @@
+.custom-btn {
+    background-color: #45C4B0;
+    transition: background-color 0.3s ease;
+    width: 12em;
+  }
+  
+.custom-btn:hover {
+  background-color: #1b5851; /* Ou qualquer cor mais escura desejada para o hover */
+}
+
